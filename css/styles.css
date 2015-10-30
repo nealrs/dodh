@@ -68,6 +68,6 @@ a.button{
   background-color: #207180;
 }
 
-/*@media screen and (min-width: 0px) and (max-width: 400px) {
-  .nomobile { display: none; }
-}*/
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  .cmobile { text-align: center; }
+}
