@@ -1,0 +1,73 @@
+body{
+  width:100%;
+  margin:auto;
+  padding:0;
+  font-family: 'ClearSans', 'HelveticaNeue', 'Helvetica Neue', sans-serif;
+  color: #111111;
+  max-width:700px;
+}
+
+a {color: #2d9eb2;; text-decoration: none;}
+a:active, a:hover {color: #207180;}
+/*a:visited {color: #85144B;}*/
+
+.main{
+  margin: 1rem;
+  line-height: 140%;
+  font-size: 18px;
+}
+
+.logo{
+ border:0;
+ width: 180px;
+ vertical-align: middle;
+}
+
+.celebrate{
+  margin:1rem 0;
+  font-size: 24px;
+  line-height: 140%;
+  text-align:center;
+}
+
+.center{
+  text-align:center;
+}
+
+.button{
+  display: block;
+  background-color: #2d9eb2;
+  border-color: #237a89;
+  color: white;
+  box-shadow: none;
+  border-radius: 2px;
+  transition: all 200ms ease-out;
+  display: inline-block;
+  border-top: style: solid;
+  border-width: 0 0 3px;
+  cursor: pointer;
+  font-family: 'ClearSans', 'HelveticaNeue-Bold', 'Helvetica Neue Bold', sans-serif;
+  font-weight: bold;
+  line-height: normal;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding-top: 0.5625em;
+  padding-right: 1.125em;
+  padding-bottom: 0.625em;
+  padding-left: 1.125em;
+  font-size: 1em;
+}
+
+a.button{
+  color:white;
+}
+
+.button:hover{
+  background-color: #207180;
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  .nomobile { display: none; }  /* show it on small screens */
+}
