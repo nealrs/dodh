@@ -10,7 +10,9 @@
  <meta name="robots" content="noindex">
  <link rel="stylesheet" href="css/styles.css">
 
-  <!--[if lt IE 9]>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.7/css/swiper.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.7/css/swiper.min.css">
+   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
@@ -25,21 +27,62 @@
 
   <p class="celebrate">🎉 Celebrate software &amp; the people who make it 🙌</p>
 
-  <p>How do you celebrate your software on Devpost? <strong><a href="https://secure.devpost.com/users/register">Create a portfolio and write the story behind your code.</a></strong> Explain what inspired you, how you and your team worked together, the obstacles you ran into, and how you overcame them.</p>
+  <p>How do you celebrate your software on Devpost? <strong><a href="https://secure.devpost.com/users/register">Create a portfolio and tell the story behind your code.</a></strong> Explain what inspired you, how you and your team worked together, the obstacles you ran into, and how you overcame them.</p>
 
-  <p>Remember, landing pages sell, readmes are instructional, but stories offer real insight. </p>
+<p>Landing pages sell and readmes are instructional, but it's the stories that people care about.</p>
 
   <p>There are <em>hundreds of thousands</em> of developers out there who are eager to learn from you and your experiences. And they're on Devpost too.</p>
 
-  <p>Here are four examples of people telling their stories, their way:</p>
+  <p>Here are a few examples of people telling their stories, their way:</p>
 
   <!-- this will be a flexbox of actual project layouts linked to projects or maybe with some sort of popover???-->
-  <img src="res/projects.png" style="max-width:100%;">
+  <!--<img src="res/projects.png" style="max-width:100%;">-->
+
+  <!--<div class="grid">
+    <div class="grid__row grid__row--sm">
+      <div class="grid__item">
+        <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=1&w=250&h=250">
+      </div>
+      <div class="grid__item">
+        <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=2&w=250&h=250">
+      </div>
+    </div>
+    <div class="grid__row grid__row--sm">
+      <div class="grid__item">
+        <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=3&w=250&h=250">
+      </div>
+      <div class="grid__item">
+        <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=4&w=250&h=250">
+      </div>
+    </div>
+  </div>-->
+
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><a href="http://devpost.com/software/obsidio"><img src=""><h2>Obsido</h2></a><p>The game of guns and strategy, but mostly guns</p></div>
+        <div class="swiper-slide"><a href="http://devpost.com/software/underground-map-pxy6qd"><img src=""><h2>Underground Map</h2></a><p>The world as we don't see it.</p></div>
+        <div class="swiper-slide"><a href="http://devpost.com/software/bazaar-74vsf"><img src=""><h2>Bazaar</h2></a><p>VR game</p></div>
+        <div class="swiper-slide"><a href="http://devpost.com/software/athelas"><img src=""><h2>Athelas</h2></a><p>Blood imaging and analysis from your smartphone.</p></div>
+
+        <div class="swiper-slide"><a href="http://devpost.com/software/hot-guard"><img src=""><h2>Hot Guard</h2></a><p>Smart wearables for the visually-impaired and kids</p></div>
+        <div class="swiper-slide"><a href="http://devpost.com/software/netflix-marathon"><img src=""><h2>Bingewatcher</h2></a><p>Trigger actions (like food delivery) when you bingewatch Netflix</p></div>
+        <div class="swiper-slide"><a href="http://devpost.com/software/i-n-s-p-i-r-i-t"><img src=""><h2>I N S P I R I T</h2></a><p>An interactive VR story about people and lights</p></div>
+        <div class="swiper-slide"><a href="http://devpost.com/software/emotcha"><img src=""><h2>Emotcha</h2></a><p>A captcha alternative, based on our most human qualities, emotion</p></div>
+    </div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
   <!-- FIN -->
+
 
   <p>Our motto is <strong>&ldquo;Devpost or it didn't happen.&rdquo;</strong> Because, if you don't tell anyone about your software, how will people ever find out about it? Nobody can explain your hacks better than you!</p>
 
-  <p>We aren't a PR channel, crowd-funding site, SaaS, link aggregator, or hype machine. We <em>are</em> a supportive community of hackers who love building and learning (and emoji). Even if your project isn't finished, share your progress and keep your followers up to date.</p>
+  <p>We're not PR for pre-launch startups, a crowd-funding site, SaaS, link aggregator, or hype machine. We <em>are</em> a supportive community of hackers who love building and learning (and emoji). Even if your project isn't finished, share your progress and keep your followers up to date.</p>
 
   <p class="center"><a href="https://secure.devpost.com/users/register" class="button">Get started and tell your story</a></p>
 
@@ -50,5 +93,17 @@
   <p>😺 Brandon, Holly, Richard, Serena, Peter, Neal, Elle, Jonathan, Joanna, Robin, Matt Z, Robin, Matt G, Stefanie, Brian, Desiree, and Ross</p>
 
  </div>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.7/js/swiper.min.js"></script>
+ <script>
+  var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+
+  })
+  </script>
+
 </body>
 </html>
